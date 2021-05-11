@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:elevation="6dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/txtInsta"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Centro Cultural de São Paulo"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/imgPosting"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_marginTop="10dp"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/ccsp_sp" />
+
+            <TextView
+                android:id="@+id/txtLegend"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="sans-serif"
+                android:text="#tbt passeio ao CCSP!!!"
+                android:typeface="normal" />
+
+            <TextView
+                android:id="@+id/txtTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="time"
+                android:text="Agora mesmo" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnGood"
+                style="?attr/buttonBarButtonStyle"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0"
+                android:drawableLeft="@drawable/ic_like_black_24" />
+
+            <Button
+                android:id="@+id/btnComents"
+                style="?attr/buttonBarButtonStyle"
+                android:layout_width="39dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0"
+                android:drawableLeft="@drawable/ic_coments_black_24" />
+
+            <Button
+                android:id="@+id/btnCompartilhe"
+                style="?attr/buttonBarButtonStyle"
+                android:layout_width="39dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0"
+                android:drawableLeft="@drawable/ic_compartilhe_24" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
